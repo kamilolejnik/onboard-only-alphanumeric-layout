@@ -1,0 +1,85 @@
+<?xml version="1.0" ?>
+<!--
+Copyright © 2024 Kamil Olejnik <kolejnik198@gmail.com>
+Copyright © 2013 Francesco Fumanti <francesco.fumanti@gmx.net>
+Copyright © 2013-2014, 2016 marmuta <marmvta@gmail.com>
+This file is part of Onboard.
+Onboard is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 3 of the License, or
+(at your option) any later version.
+Onboard is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <http://www.gnu.org/licenses/>.
+-->
+<keyboard id="kamil-alpha-number" format="3.2" section="system" summary="Mobile keyboard for small screens">
+  <include file="key_defs.xml"/>
+  <!-- box containing all the keys and buttons -->
+  <!-- the rows of keys on the Onboard keyboard are counted bottom to top starting with 1 -->
+  <box border="0.5" spacing="2.0" orientation="vertical">
+    <!--- word suggestions -->
+    <panel filename="kamil-alpha-number-Alpha.svg">
+      <include file="word_suggestions.xml"/></panel>
+    <key_template button="true" id="layer0" show_active="false"/>
+    <panel>
+      <box orientation="vertical">
+        <!-- alpha and numbers layers -->
+        <panel>
+          <!-- Latin and other keymaps -->
+          <panel id="alpha-keys" filename="kamil-alpha-number-Alpha.svg" layer="alpha">
+            <!-- row 2,3,4 and 5 of the layers -->
+            <!-- row 5 -->
+            <key group="alphanumeric" id="DD01" keysym="0x31" label="1" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD02" keysym="0x32" label="2" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD03" keysym="0x33" label="3" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD04" keysym="0x34" label="4" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD05" keysym="0x35" label="5" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD06" keysym="0x36" label="6" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD07" keysym="0x37" label="7" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD08" keysym="0x38" label="8" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD09" keysym="0x39" label="9" unlatch_layer="false"/>
+            <key group="alphanumeric" id="DD10" keysym="0x30" label="0" unlatch_layer="false"/>
+            
+            <!-- row 4 -->
+            <key group="alphanumeric" id="AD01"/>
+            <key group="alphanumeric" id="AD02"/>
+            <key group="alphanumeric" id="AD03"/>
+            <key group="alphanumeric" id="AD04"/>
+            <key group="alphanumeric" id="AD05"/>
+            <key group="alphanumeric" id="AD06"/>
+            <key group="alphanumeric" id="AD07"/>
+            <key group="alphanumeric" id="AD08"/>
+            <key group="alphanumeric" id="AD09"/>
+            <key group="alphanumeric" id="AD10"/>
+            <!-- row 3 -->
+            <key group="alphanumeric" id="AC01"/>
+            <key group="alphanumeric" id="AC02"/>
+            <key group="alphanumeric" id="AC03"/>
+            <key group="alphanumeric" id="AC04"/>
+            <key group="alphanumeric" id="AC05"/>
+            <key group="alphanumeric" id="AC06"/>
+            <key group="alphanumeric" id="AC07"/>
+            <key group="alphanumeric" id="AC08"/>
+            <key group="alphanumeric" id="AC09"/>
+            <key group="alphanumeric" id="AC10" keycode="47" layout="be,fr,cm(azerty)"/>
+            <key group="alphanumeric" id="AC10" char="" label=""/>
+            <!-- row 2 -->
+            <key group="shifts" id="LFSH.like_rtrn"/>
+            <key group="alphanumeric" id="AB01"/>
+            <key group="alphanumeric" id="AB02"/>
+            <key group="alphanumeric" id="AB03"/>
+            <key group="alphanumeric" id="AB04"/>
+            <key group="alphanumeric" id="AB05"/>
+            <key group="alphanumeric" id="AB06"/>
+            <key group="alphanumeric" id="AB07" char="'" label="'" layout="be,fr,cm(azerty)"/>
+            <key group="alphanumeric" id="AB07"/>
+            <key group="bottomrow" id="BKSP"/>
+          </panel>
+        </panel>
+      </box>
+    </panel>
+  </box>
+</keyboard>
